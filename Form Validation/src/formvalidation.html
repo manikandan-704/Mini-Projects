@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+
+   
+</head>
+<body class= "flex flex-col md:flex-row h-screen bg-gray-200 font-sans">
+  <div class="w-full md:w-1/2 bg-blue-500 mb-50px">
+    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="">
+  </div>
+  <div class="w-full md:w-1/2 flex flex-col justify-center items-center">
+   <h1 class="text-center font-bold text-3xl p-5 mt-4 mb-4">WELCOME</h1>
+   <form id="formvalidation" class="border-0 bg-white pr-10 pl-10 pt-7 pb-7 rounded-lg shadow-lg mb-8">
+     <div class="grid gap-1">
+        <label class="mt-2 font-bold ">User Name</label>
+        <input type="text" id="uname" class="border-b-2 w-60 outline-0 pl-1 border-gray-400 font-normal">
+        <span id="error-name" class="font-normal text-red-600"></span>
+       </div>
+
+      <div class="grid gap-1">
+        <label class="mt-2 font-bold">Email</label>
+        <input id="email" type="text" class="border-b-2 outline-0 pl-1 border-gray-400 font-normal">
+        <span id="error-email" class="font-normal text-red-600"></span>
+       </div>
+
+     <div class="grid gap-1">
+        <label class="mt-2 font-bold">Password</label>
+        <input id="password" type="password" class="border-b-2 outline-0  pl-1 border-gray-400 font-medium">
+        <span id="error-pass"class="font-normal text-red-600"></span>
+       </div>
+
+     <div class="grid gap-1">
+        <label class="mt-2 font-bold">Confirm Password</label>
+        <input id="cpassword" type="password" class="border-b-2 outline-0 pl-1 border-gray-400 font-medium">
+        <span id="error-cpass"class="font-normal text-red-600"></span>
+       </div>
+       <button type="submit" id="submitBtn" class="grid justify-center ml-16 mt-5 bg-blue-500 text-white p-2 w-1/2 rounded-lg hover:bg-blue-600 hover:scale-[1.04] hover:translate-0.4 ease cursor-pointer">Submit</button>
+   </form>
+   </div>
+   <script src="./formvalidation.js"></script>
+</body>
+</html>

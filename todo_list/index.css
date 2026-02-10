@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+#whole{
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(135deg,rgb(42, 42, 162),rgb(177, 27, 27));
+    padding: 10px;
+}
+#container{
+    width: 100%;
+    max-width: 540px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+}
+#list-container{
+    display: flex;
+    flex-direction: column;
+    font-weight:bold;
+    position: relative;
+    margin-top: 20px;
+}
+#whole #container #list-container li{
+    list-style: none;
+    background-color: rgb(226, 226, 226);
+    padding: 10px;
+    border-radius: 2px;
+    margin-top: 1px;
+}
+#whole #container #list-container li:hover{
+    background-color: rgb(209, 209, 209);
+    transition: all 0.4s ease-in-out;
+}
+h2{
+    margin-bottom: 10px;
+}
+input{
+    font-size: medium;
+    padding: 5px;
+    width: 70%;
+    margin-right: 20px;
+    border-top : none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid linear-gradient(180deg,rgb(42, 42, 162),rgb(177, 27, 27));
+    outline: none
+} 
+
+button{
+    background:linear-gradient(135deg,rgb(42, 42, 162),rgb(177, 27, 27));
+    padding: 5px;
+    width: 15%;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    box-shadow: 5px 5px 10px;
+}
+button:hover{
+    transform: scale(1.05);
+    transition: ease-in-out 0.3;
+}
+#list-container li span{
+    position: absolute;
+    right: 0;
+    /* text-align: center;
+    border: 0;
+    background-color:  rgb(189, 189, 189);
+    padding: 5px; */
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #454545;
+    line-height: 20px;
+    text-align: center;
+    background-color: #c0c0c0;
+    width: 20px;
+    height: 22px;
+    border-radius: 50%;
+    margin-right: 5px;
+    
+}
+#list-container li span:hover{
+    background-color: #7a7a7a;
+    transform: scale(1.05);
+    transition: ease-in-out 0.3;
+    cursor: pointer;
+}
+#whole #container #list-container li .back{
+    background-color: rgb(130, 239, 130);
+}

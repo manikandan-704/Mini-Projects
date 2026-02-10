@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    
+}
+body{
+    background: linear-gradient(145deg,rgb(178, 48, 249),rgb(218, 119, 248));
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: #333333;
+}
+.con{
+    margin: 50px auto;
+    border: 5px solid #292828;
+    width: 300px;
+    display: grid;
+    gap: 5px;
+    padding: 15px;
+    background: rgb(214, 214, 214);
+    border-radius: 15px;
+}
+.con .info{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(214, 214, 214);
+}
+.con .info button{
+    width: 60px;
+    height: 60px;
+    aspect-ratio: 1/1;
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+    background: linear-gradient(310deg, rgb(52, 52, 52),rgb(203, 203, 203));
+    color: rgb(36, 36, 36);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.con .info input{
+    width: 100%;
+    border-radius: 10px;
+    border: #8d8c8c 2px solid;
+    text-align: end;
+    outline: none;
+    height: 50px;
+    font-size: 30px;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background: white;
+}
+.con .info button:hover{
+    background: #888888;
+    scale: 0.93;
+    transition: all 0.2s ease-in-out;
+}
+.con .info .Calculate{
+    background: linear-gradient(310deg, #905900, #ff9d00);
+    color: rgb(251, 239, 239);
+}
+.con .info .Calculate:hover{
+    background: #ff9d00;
+}

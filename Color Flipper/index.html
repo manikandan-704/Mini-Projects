@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+        }
+
+        #body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            min-width: 30%;
+            width: 30%;
+        }
+
+        button {
+            padding: 15px;
+            border-radius: 8px;
+            border: 2px solid black;
+            /* box-shadow: 5px 5px 5px gray; */
+            font-size: large;
+            font-weight: bold
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        /* .r {
+            background-color: red ;
+        }
+        .y{
+            background-color: yellow ;
+        }
+        .g{
+            background-color: green ;
+        } */
+    </style>
+</head>
+
+<body id="body">
+    <div class="container">
+        <button class="red" id="redbtn" onclick="disPlay('red')">Red</button>
+        <button class="yellow" id="yellowbtn" onclick="disPlay('yellow')">Yellow</button>
+        <button class="green" id="greenbtn" onclick="disPlay('green')">Green</button>
+        <button onclick="randomColor()">Random</button>
+    </div>
+
+    <script>
+
+        const back = document.getElementById("body")
+
+        function disPlay(color) {
+            back.style.backgroundColor = color;
+        }
+
+        /*function Red() {
+            back.classList.add("r");
+        }
+         function Yellow() {
+            back.classList.add("y");
+        }
+        function Green() {
+            back.classList.add("g");
+        }*/
+        function randomColor() {
+            const one = Math.round(Math.random() * 255);
+            const two = Math.round(Math.random() * 255);
+            const three = Math.round(Math.random() * 255);
+
+            const Color = `rgb(${one},${two},${three})`;
+            back.style.backgroundColor = Color;
+        }
+
+    </script>
+</body>
+
+</html>
